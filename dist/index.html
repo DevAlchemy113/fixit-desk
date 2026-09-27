@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A small, searchable help desk site for practicing web development and troubleshooting.">
+    <title>FixIt Desk | Issue library</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2315334a'/%3E%3Cpath d='M18 20h28v6H18zm0 12h20v6H18zm0 12h14v6H18z' fill='%2358d6bd'/%3E%3C/svg%3E">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="brand" href="#top" aria-label="FixIt Desk home"><span class="brand-mark">F</span><span>FixIt Desk</span></a>
+        <nav aria-label="Main navigation"><a href="#issues">Issues</a><a href="#how-it-works">How it works</a></nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="intro shell" aria-labelledby="page-title">
+        <div class="eyebrow">DEVELOPER PRACTICE PROJECT <span aria-hidden="true">/</span> ISSUE LIBRARY</div>
+        <h1 id="page-title">Find a fix.<br><span>Learn the system.</span></h1>
+        <p>Explore a small library of common workplace tech issues. Search by keyword or filter by category to find a useful starting point.</p>
+      </section>
+
+      <section id="issues" class="library shell" aria-labelledby="issues-title">
+        <div class="section-heading"><div><p class="section-label">THE LIBRARY</p><h2 id="issues-title">Common issues</h2></div><p id="result-count" class="count" role="status" aria-live="polite"></p></div>
+        <div class="controls">
+          <label class="search-label" for="issue-search">Search issues
+            <span class="search-wrap"><span aria-hidden="true">⌕</span><input id="issue-search" type="search" placeholder="Try printer, network, or login" autocomplete="off"></span>
+          </label>
+          <div class="filter-group" role="group" aria-label="Filter by category">
+            <button type="button" class="filter active" data-category="all" aria-pressed="true">All</button>
+            <button type="button" class="filter" data-category="Devices" aria-pressed="false">Devices</button>
+            <button type="button" class="filter" data-category="Accounts" aria-pressed="false">Accounts</button>
+            <button type="button" class="filter" data-category="Network" aria-pressed="false">Network</button>
+          </div>
+        </div>
+        <div id="issue-grid" class="issue-grid" aria-live="polite"></div>
+        <p id="empty-state" class="empty" hidden>No issues match your search. Try another word or category.</p>
+      </section>
+
+      <section id="how-it-works" class="about shell" aria-labelledby="about-title">
+        <div><p class="section-label">A SIMPLE WORKFLOW</p><h2 id="about-title">Read. Try. Verify.</h2></div>
+        <p>Each card gives you a first check and a way to confirm the issue is resolved. The examples are for practice; always follow your workplace’s actual support procedures.</p>
+      </section>
+    </main>
+    <footer class="site-footer"><div class="shell">FixIt Desk <span>·</span> A learning project</div></footer>
+  </body>
+</html>
