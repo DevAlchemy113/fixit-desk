@@ -5,7 +5,8 @@ const issues = [
   { id: "FD-103", category: "Network", title: "Wi-Fi keeps disconnecting", description: "A laptop loses its wireless connection during normal use.", firstCheck: "Check signal strength and try another known working network." },
   { id: "FD-104", category: "Devices", title: "Monitor has no signal", description: "The computer is running, but the external display stays blank.", firstCheck: "Check the input source, cable, and display settings." },
   { id: "FD-105", category: "Accounts", title: "Password reset link expired", description: "A password reset email opens an invalid or expired link.", firstCheck: "Request a fresh link and use the newest email." },
-  { id: "FD-106", category: "Network", title: "Website will not load", description: "One site is unreachable while other sites work normally.", firstCheck: "Check the URL and compare results in another browser." }
+  { id: "FD-106", category: "Network", title: "Website will not load", description: "One site is unreachable while other sites work normally.", firstCheck: "Check the URL and compare results in another browser." },
+  {id: "FD-107", category: "Devices", title: "Keyboard not working", description: "The space bar on the keyboard is not working.", firstCheck: "Check for dirt or debris around the space bar."},
 ];
 
 const grid = document.querySelector("#issue-grid");
